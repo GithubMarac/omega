@@ -10,19 +10,17 @@ const ContractList: React.FC<ContractListProps> = ({ contracts }) => {
   const getStatusColor = (status: string): string => {
     switch (status) {
       case 'KREIRAN':
-        return 'green'; // green color
+        return 'green';
       case 'NARUČENO':
-        return 'yellow'; // yellow color
+        return 'yellow';
       case 'ISPORUČENO':
-        return 'grey'; // grey color
+        return 'grey';
       default:
         return '';
     }
   };
 
   const formatDeliveryDate = (deliveryDate: Date): string => {
-    // implement date formatting according to Croatian language
-    // for example, you can use a library like 'date-fns' for date formatting
     return deliveryDate.toLocaleDateString('hr-HR');
   };
 

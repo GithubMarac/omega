@@ -4,6 +4,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import './App.css'; 
+import ContractDetails from './pages/ContractDetails';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,6 +15,7 @@ root.render(
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
+          <Route path="/contract/:id" element={<ContractDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>

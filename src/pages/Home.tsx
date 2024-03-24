@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
     setAdvancePaymentDate(new Date());
     setDeliveryDate(new Date());
   };
-
+  
   useEffect(() => {
     const mockedContracts: Contract[] = [
         {

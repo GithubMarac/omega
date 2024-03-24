@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.green{
+  color: green;
+}
+
+.yellow{
+  color: yellow;
+}
+
+.gray{
+  color: gray;
+}

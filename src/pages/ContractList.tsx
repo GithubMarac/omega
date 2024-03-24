@@ -48,7 +48,7 @@ const ContractList: React.FC<ContractListProps> = ({ contracts }) => {
         {contracts.map(contract => (
           <li key={contract.id} className={`contract-item`}>
             <span>Ime kupca: {contract.kupac}</span>
-            <span onClick={ (e) => navigate(`contract/${contract.id}`, { state: { contract: contract } } ) } >Broj ugovora: {contract.broj_ugovora}</span>
+            <a href="javascript:void(0)" onClick={ (e) => navigate(`contract/${contract.id}`, { state: { contract: contract } } ) } >Broj ugovora: {contract.broj_ugovora}</a>
             <span>Rok isporuke: <input type="date" value={contract.rok_isporuke.toISOString().split('T')[0]} onChange={handleDeliveryDateChange} /></span>
             <span>Status ugovora: <p className={`${getStatusColor(contract.status)}`}>{contract.status}</p></span>
             <p>Status: 
